@@ -2,6 +2,15 @@ const video = document.getElementById('video');
 const playPause = document.getElementById('play-pause');
 const stop = document.getElementById('stop');
 const seek = document.getElementById('seek');
+const imgchange = document.getElementById('changeImg');
+const largecont = document.getElementById('largeImage');
+function closeImage() {
+    largecont.style.display = 'none';
+}
+function ImageClick(source) {
+    imgchange.src = source;
+    largecont.style.display = 'block';
+}
 
 playPause.addEventListener('click', () => {
   if (video.paused) {
