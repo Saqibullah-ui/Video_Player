@@ -38,24 +38,24 @@ body{
         width: 100%;
       grid-template-columns: repeat(1, 1fr);
     }
-    .comp-img{
+    .comp-video{
         width: 50%;
         height: 30%;
     }
-    .img{
+    .video{
         width: 250px;
         height: 130px;
 
     }
   }
   
-.img{
+.video{
     width: 420px;
     height: 300px;
     border-radius: 20px;
     transition: transform 0.5s;
 }
-.img:hover{
+.video:hover{
     transform: translateX(15px) rotate(-5deg);
 }
 .lightbox-container {
@@ -68,7 +68,7 @@ body{
     display: none;
   }
   
-  .lightbox-image {
+  .lightbox-video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -90,7 +90,7 @@ body{
   }
   
 @media (max-width:768px) {
-    .comp-img{
+    .comp-video{
         width: 90%;
         height: 80%;
     }
